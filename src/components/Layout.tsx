@@ -36,7 +36,7 @@ const Layout = (props: React.PropsWithChildren) => (
                 <Box
                     h={HEADER_HEIGHT_VH}
                 >
-                    headerr
+                    <TopBar />
                 </Box>
 
                 <Box
