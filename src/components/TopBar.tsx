@@ -1,22 +1,26 @@
 import * as React from "react"
 import {
-    Grid, GridItem,
+    Flex,
+    Heading,
 } from "@chakra-ui/react"
+
+// for ratios, inspired by Fibonacci
+// Spiral, see: https://upload.wikimedia.org/wikipedia/commons/1/15/Fibonacci_Squares.svg
+// header: 3
+// body: 29
+// footer: 2
 
 const TopBar = (props: React.PropsWithChildren) => (
     <React.Fragment>
-        <Grid
-            h='100vh'
-            templateColumns='repeat(3, 0fr)'
-            gap={0}
+        <Flex
+            as='header'
+            w='100%'
+            h='100%'
+            bgColor='#F2E227'
             {...props}
         >
-            <GridItem w='100%' bg='blue.500'></GridItem>
-
-            <GridItem w='100%' bg='blue.500'></GridItem>
-
-            <GridItem w='100%' bg='blue.500'></GridItem>
-        </Grid>
+            <Heading>I'm an Heading!</Heading>
+        </Flex>
     </React.Fragment >
 )
 
