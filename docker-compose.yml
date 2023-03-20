@@ -19,7 +19,7 @@ services:
       - database-data:/var/lib/postgresql/data/
 
   nginx:
-    container_name: hm-nginx
+    container_name: titproject-nginx
     restart: always
     build:
       dockerfile: Dockerfile.dev
