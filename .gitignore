@@ -27,3 +27,8 @@ yarn-error.log*
 
 # TIT-PROJECT specifics
 /VARIOUS
+.env
+prod.env
+*.prod.env
+dev.env
+*.dev.env
