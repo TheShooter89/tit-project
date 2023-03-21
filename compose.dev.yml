@@ -28,7 +28,7 @@ services:
       - "3050:80"
     depends_on:
       - client
-      - server
+      - api
 
   api:
     container_name: hm-api
