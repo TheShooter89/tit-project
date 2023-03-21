@@ -6,7 +6,7 @@ volumes:
 
 services:
   postgres-db:
-    container_name: tit-project-db
+    container_name: titproject-db
     image: "postgres:14.4-alpine3.16"
     restart: always
     environment:
@@ -56,7 +56,7 @@ services:
       APP_URL: http://localhost:3050
 
   client:
-    container_name: hm-client
+    container_name: titproject-client
     stdin_open: true
     build:
       dockerfile: Dockerfile.dev
